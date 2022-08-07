@@ -1,0 +1,16 @@
+<log4j:configuration debug="false" xmlns:log4j="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="
+
+ ">
+    <!--Console appender -->
+    <appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} *****  %p **** %m ****>  %n"/>
+        </layout>
+    </appender>
+
+    <root>
+        <level value="DEBUG"/>
+        <appender-ref ref="stdout"/>
+    </root>
+</log4j:configuration>
